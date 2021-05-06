@@ -60,8 +60,8 @@ void set_device_props(const std::string brand, const std::string device, const s
 }
 
 void load_device_properties() {
-    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ2A.210405.005/7181113:user/release-keys");
-    property_override("ro.build.description", "redfin-user 11 RQ2A.210405.005 7181113 release-keys");
+    property_override("ro.build.fingerprint", "google/redfin/redfin:11/RQ2A.210505.003/7255357:user/release-keys");
+    property_override("ro.build.description", "redfin-user 11 RQ2A.210505.003 7255357 release-keys");
     std::string hwname = GetProperty("ro.boot.hwname", "");
     std::string region = GetProperty("ro.boot.hwc", "");
 
