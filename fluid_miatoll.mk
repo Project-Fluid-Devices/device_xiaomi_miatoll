@@ -30,5 +30,5 @@ DISABLE_DEFAULT_CAMERA := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 FLUID_BUILD_TYPE := OFFICIAL
 PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Ramisky \
+  ro.fluid.maintainer=dereference \
   ro.fluid.cpu=SDM720G
