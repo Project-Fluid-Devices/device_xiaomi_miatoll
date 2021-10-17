@@ -8,13 +8,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Fluid stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
-PRODUCT_NAME := lineage_miatoll
+FLUID_BUILD_TYPE := OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.fluid.maintainer=dereference \
+    ro.fluid.cpu=SD720G
+
+PRODUCT_NAME := fluid_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
